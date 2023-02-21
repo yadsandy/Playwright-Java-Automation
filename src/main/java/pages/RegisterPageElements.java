@@ -20,13 +20,13 @@ public class RegisterPageElements extends Base{
 	private Locator password_Txt = page.locator("#password");
 	private Locator passwordConfirm_Txt = page.locator("#password-confirm");
 	private Locator register_Btn = page.locator("input:has-text('Register')");
-	private Locator register_Lbl = page.locator("h:has-text('Register')");
+	private Locator register_Lbl = page.locator("#kc-form-buttons");
 	private Locator errorMsg = page.locator("span:right-of(span)");
 	private Locator backToLogin_Btn = page.locator("a:has-text('« Back to Login')");
 
 	// To fill the login form using email and password and click on sign in button
 	public void completeRegisterForm(String email, String password, String confirmPassword) {
-		commonActions.waitForSelector("#email");
+		commonActions.waitForSelector("#kc-form-buttons");
 		Assert.assertTrue(commonActions.checkElementIsDisplayed(register_Lbl));
 		Assert.assertTrue(commonActions.checkElementIsDisplayed(backToLogin_Btn)); 
 		commonActions.clearFieldAndEnterText(email_Txt, email);
