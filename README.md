@@ -9,7 +9,7 @@ Pre-requisition for the Framework execution :
 5. TestNG
 
 Execution : 
-1. Clone and import the project into the eclipse and resolve any error dependency if occurs.
+1. Clone and import the project into the eclipse and resolve any dependency error if occurs.
 2. The Framework contains 2 test classes (Login and Register). You can run them separately or you can run them through Tesng.xml
 
 If you have any questions contact me on linkedIn https://www.linkedin.com/in/yadsandy/
