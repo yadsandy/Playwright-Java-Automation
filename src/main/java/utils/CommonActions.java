@@ -42,7 +42,7 @@ public class CommonActions {
 		page.waitForSelector(value);
 	}
 	public boolean compareText(Locator locator, String message) {
-		return locator.textContent().trim().equalsIgnoreCase(message.trim());
+		return locator.textContent().equalsIgnoreCase(message.trim());
 	}
 
 	public void clickOnNthElement(Locator locator, int index) {

@@ -48,6 +48,7 @@ public class LoginPageElements extends Base {
 	// verify the forgot password page
 	public void checkForgotPasswordPage() {
 		commonActions.click(forgotPassword_Lbl);
+		commonActions.waitForSelector("#kc-page-title");
 		Assert.assertTrue(commonActions.checkElementIsDisplayed(forgotPassword_Txt));
 	}
 
