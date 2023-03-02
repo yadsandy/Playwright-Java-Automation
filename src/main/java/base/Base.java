@@ -35,7 +35,6 @@ public class Base {
 		pw = Playwright.create();
 		LaunchOptions lp = new LaunchOptions();
 		lp.setHeadless(headless);
-		lp.setChannel(browserName);
 		Browser browser = null;
 		if (browserName.equals("chrome")) {
 			browser = pw.chromium().launch(lp);
